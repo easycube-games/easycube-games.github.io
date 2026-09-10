@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Small games, many worlds. Discover Spellarium, Iron Dominion and Swipe Puzzle from Easy Cube Games, an independent mobile game developer.">
+    <meta name="theme-color" content="#07191e">
+    <meta name="color-scheme" content="dark">
+    <title>Easy Cube Games — One creator. Many worlds.</title>
+    <link rel="canonical" href="https://easycube-games.github.io/">
+    <link rel="icon" href="assets/favicon.png" type="image/png" sizes="48x48">
+    <link rel="stylesheet" href="styles.css">
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="Easy Cube Games home">
+          <img src="assets/logo.webp" width="48" height="48" alt="">
+          <span class="brand-name">EASY CUBE <span>GAMES</span></span>
+        </a>
+        <nav class="header-actions" aria-label="Main navigation" data-i18n-aria="navigation">
+          <a class="nav-link" href="#games" data-i18n="navGames">The games</a>
+          <div class="language-switch" role="group" aria-label="Language" data-i18n-aria="language">
+            <button type="button" lang="en" data-language="en" aria-label="English" aria-pressed="true">EN</button>
+            <button type="button" lang="ru" data-language="ru" aria-label="Русский" aria-pressed="false">RU</button>
+          </div>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="eyebrow">Independent mobile games</p>
+            <h1 id="hero-title"><span data-i18n="headlineOne">One creator.</span><br><span class="warm-text" data-i18n="headlineTwo">Many worlds.</span></h1>
+            <p class="hero-description" data-i18n="intro">I'm Vasiliy, a solo indie developer. I make games about puzzles, magic and battles — one idea at a time.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="https://play.google.com/store/apps/dev?id=6836920748280219417" target="_blank" rel="noopener noreferrer">
+                <span data-i18n="visitPlay">Visit Google Play</span>
+                <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>
+              </a>
+              <a class="text-link" href="#games"><span data-i18n="explore">Explore the games</span><span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+          <div class="hero-art">
+            <img src="assets/worlds-1280.webp" srcset="assets/worlds-640.webp 640w, assets/worlds-1280.webp 1280w" sizes="(max-width: 800px) calc(100vw - 40px), 54vw" width="1280" height="720" fetchpriority="high" decoding="async" alt="A knight, a fire-and-water crystal and colorful puzzle tiles surround the Easy Cube Games logo." data-i18n-alt="worldsAlt">
+            <div class="art-caption" aria-hidden="true"><span>PUZZLES</span><span>MAGIC</span><span>BATTLES</span></div>
+          </div>
+        </section>
+
+        <section class="games-section" id="games" aria-labelledby="games-title">
+          <div class="section-heading">
+            <h2 id="games-title" data-i18n="gamesTitle">Find your kind of play.</h2>
+            <span class="section-note" data-i18n="android">Made for Android</span>
+          </div>
+          <div class="games-grid">
+            <article class="game game-spellarium">
+              <div class="game-art spellarium-art">
+                <span class="game-number" aria-hidden="true">01</span>
+                <img src="assets/spellarium.webp" width="384" height="384" loading="lazy" decoding="async" alt="">
+              </div>
+              <div class="game-content">
+                <p class="game-genre" data-i18n="spellGenre">Idle · Magic · Crafting</p>
+                <h3>Spellarium<span class="game-subtitle">Magic Clicker</span></h3>
+                <p class="game-description" data-i18n="spellDescription">Gather essence, craft spells and unlock fire and water. Build your magical workshop, one tap at a time.</p>
+                <a class="game-link" href="https://play.google.com/store/apps/details?id=com.easycube.spellarium" target="_blank" rel="noopener noreferrer" aria-label="Get Spellarium: Magic Clicker on Google Play" data-i18n-aria="spellLink">
+                  <span data-i18n="getPlay">Get it on Google Play</span>
+                  <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="game game-iron">
+              <div class="game-art iron-art">
+                <span class="game-number" aria-hidden="true">02</span>
+                <img src="assets/iron-dominion.webp" width="384" height="384" loading="lazy" decoding="async" alt="">
+              </div>
+              <div class="game-content">
+                <p class="game-genre" data-i18n="ironGenre">Match-3 · Strategy · Roguelite</p>
+                <h3>Iron Dominion</h3>
+                <p class="game-description" data-i18n="ironDescription">Match tiles to summon an army. Choose your route, recruit champions and shape each roguelite run.</p>
+                <p class="coming-soon" data-i18n="comingSoon">Coming soon to Google Play</p>
+              </div>
+            </article>
+
+            <article class="game game-swipe">
+              <div class="game-art swipe-art">
+                <span class="game-number" aria-hidden="true">03</span>
+                <img src="assets/swipe-puzzle.webp" width="384" height="384" loading="lazy" decoding="async" alt="">
+              </div>
+              <div class="game-content">
+                <p class="game-genre" data-i18n="swipeGenre">Puzzles · Patterns · Color</p>
+                <h3>Swipe Puzzle</h3>
+                <p class="game-description" data-i18n="swipeDescription">Recreate colorful patterns with a swipe. A small challenge for your eyes, fingers and a little bit of logic.</p>
+                <a class="game-link" href="https://play.google.com/store/apps/details?id=com.easycube.swipepuzzle" target="_blank" rel="noopener noreferrer" aria-label="Get Swipe Puzzle on Google Play" data-i18n-aria="swipeLink">
+                  <span data-i18n="getPlay">Get it on Google Play</span>
+                  <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 Easy Cube Games</p>
+        <span class="footer-message" data-i18n="footer">Made with care. Played your way.</span>
+        <a href="mailto:easycubeindiegames@gmail.com" data-i18n="contact">Say hello</a>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Small games, many worlds. Discover Spellarium, Iron Dominion and Swipe Puzzle from Easy Cube Games, an independent mobile game developer.">
+    <meta name="description" content="Discover Swipe Sprint, Goblin Warcamp, Spellarium and Iron Dominion — indie Android games by Easy Cube Games. Coming soon: Lunisol and Puck Rogue.">
     <meta name="theme-color" content="#07191e">
     <meta name="color-scheme" content="dark">
     <title>Easy Cube Games — One creator. Many worlds.</title>
@@ -16,16 +16,23 @@
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
     <div class="page-shell">
       <header class="site-header">
-        <a class="brand" href="./" aria-label="Easy Cube Games home">
+        <a class="brand" href="./" aria-label="Easy Cube Games home" data-i18n-aria="home">
           <img src="assets/logo.webp" width="48" height="48" alt="">
           <span class="brand-name">EASY CUBE <span>GAMES</span></span>
         </a>
         <nav class="header-actions" aria-label="Main navigation" data-i18n-aria="navigation">
           <a class="nav-link" href="#games" data-i18n="navGames">The games</a>
-          <div class="language-switch" role="group" aria-label="Language" data-i18n-aria="language">
-            <button type="button" lang="en" data-language="en" aria-label="English" aria-pressed="true">EN</button>
-            <button type="button" lang="ru" data-language="ru" aria-label="Русский" aria-pressed="false">RU</button>
-          </div>
+          <select class="language-select" id="language-select" aria-label="Language" data-i18n-aria="language" disabled>
+            <option value="en-US" lang="en-US">English</option>
+            <option value="ru-RU" lang="ru-RU">Русский</option>
+            <option value="de-DE" lang="de-DE">Deutsch</option>
+            <option value="fr-FR" lang="fr-FR">Français</option>
+            <option value="es-ES" lang="es-ES">Español</option>
+            <option value="pt-BR" lang="pt-BR">Português (Brasil)</option>
+            <option value="it-IT" lang="it-IT">Italiano</option>
+            <option value="pl-PL" lang="pl-PL">Polski</option>
+            <option value="tr-TR" lang="tr-TR">Türkçe</option>
+          </select>
         </nav>
       </header>
 
@@ -34,7 +41,7 @@
           <div class="hero-copy">
             <p class="eyebrow" data-i18n="eyebrow">Independent mobile games</p>
             <h1 id="hero-title"><span data-i18n="headlineOne">One creator.</span><br><span class="warm-text" data-i18n="headlineTwo">Many worlds.</span></h1>
-            <p class="hero-description" data-i18n="intro">I'm Vasiliy, a solo indie developer. I make games about puzzles, magic and battles — one idea at a time.</p>
+            <p class="hero-description" data-i18n="intro">I'm Vasiliy, a solo indie developer. I make games about puzzles, magic, battles and hockey — one idea at a time.</p>
             <div class="hero-actions">
               <a class="button button-primary" href="https://play.google.com/store/apps/dev?id=6836920748280219417" target="_blank" rel="noopener noreferrer">
                 <span data-i18n="visitPlay">Visit Google Play</span>
@@ -55,14 +62,49 @@
             <span class="section-note" data-i18n="android">Made for Android</span>
           </div>
           <div class="games-grid">
+            <article class="game game-swipe">
+              <div class="game-art swipe-art">
+                <span class="game-number" aria-hidden="true">01</span>
+                <span class="game-status status-updated" data-i18n="updated">Updated</span>
+                <img src="assets/swipe-sprint.webp" width="384" height="384" loading="lazy" decoding="async" alt="">
+              </div>
+              <div class="game-content">
+                <p class="game-genre" data-i18n="swipeGenre">Reaction · Shapes · Speed</p>
+                <h3>Swipe Sprint<span class="game-subtitle" data-i18n="swipeSubtitle">Reaction Game</span></h3>
+                <p class="game-description" data-i18n="swipeDescription">Spot the shape and swipe its tiles before time runs out. Take on 100 levels with decoys, rotations and memory challenges, then keep going in endless mode.</p>
+                <a class="game-link" href="https://play.google.com/store/apps/details?id=com.easycube.swipepuzzle" target="_blank" rel="noopener noreferrer" aria-label="Get Swipe Sprint: Reaction Game on Google Play" data-i18n-aria="swipeLink">
+                  <span data-i18n="getPlay">Get it on Google Play</span>
+                  <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="game game-goblin">
+              <div class="game-art goblin-art">
+                <span class="game-number" aria-hidden="true">02</span>
+                <span class="game-status status-new" data-i18n="newRelease">New release</span>
+                <img src="assets/goblin-warcamp.webp" width="384" height="384" loading="lazy" decoding="async" alt="">
+              </div>
+              <div class="game-content">
+                <p class="game-genre" data-i18n="goblinGenre">Strategy · Merging · Auto battles</p>
+                <h3>Goblin Warcamp</h3>
+                <p class="game-description" data-i18n="goblinDescription">Build a goblin camp on a hex board. Merge buildings, boost neighboring troops and send your army into automatic battles on the road to 12 victories.</p>
+                <a class="game-link" href="https://play.google.com/store/apps/details?id=com.easycube.goblinwarcamp" target="_blank" rel="noopener noreferrer" aria-label="Get Goblin Warcamp on Google Play" data-i18n-aria="goblinLink">
+                  <span data-i18n="getPlay">Get it on Google Play</span>
+                  <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>
+                </a>
+              </div>
+            </article>
+
             <article class="game game-spellarium">
               <div class="game-art spellarium-art">
-                <span class="game-number" aria-hidden="true">01</span>
+                <span class="game-number" aria-hidden="true">03</span>
+                <span class="game-status" data-i18n="availableNow">Available now</span>
                 <img src="assets/spellarium.webp" width="384" height="384" loading="lazy" decoding="async" alt="">
               </div>
               <div class="game-content">
                 <p class="game-genre" data-i18n="spellGenre">Idle · Magic · Crafting</p>
-                <h3>Spellarium<span class="game-subtitle">Magic Clicker</span></h3>
+                <h3>Spellarium<span class="game-subtitle" data-i18n="spellSubtitle">Magic Clicker</span></h3>
                 <p class="game-description" data-i18n="spellDescription">Gather essence, craft spells and unlock fire and water. Build your magical workshop, one tap at a time.</p>
                 <a class="game-link" href="https://play.google.com/store/apps/details?id=com.easycube.spellarium" target="_blank" rel="noopener noreferrer" aria-label="Get Spellarium: Magic Clicker on Google Play" data-i18n-aria="spellLink">
                   <span data-i18n="getPlay">Get it on Google Play</span>
@@ -73,30 +115,46 @@
 
             <article class="game game-iron">
               <div class="game-art iron-art">
-                <span class="game-number" aria-hidden="true">02</span>
+                <span class="game-number" aria-hidden="true">04</span>
+                <span class="game-status" data-i18n="availableNow">Available now</span>
                 <img src="assets/iron-dominion.webp" width="384" height="384" loading="lazy" decoding="async" alt="">
               </div>
               <div class="game-content">
                 <p class="game-genre" data-i18n="ironGenre">Match-3 · Strategy · Roguelite</p>
-                <h3>Iron Dominion</h3>
+                <h3>Iron Dominion<span class="game-subtitle" data-i18n="ironSubtitle">Match 3 RPG</span></h3>
                 <p class="game-description" data-i18n="ironDescription">Match tiles to summon an army. Choose your route, recruit champions and shape each roguelite run.</p>
+                <a class="game-link" href="https://play.google.com/store/apps/details?id=com.easycube.irondominion" target="_blank" rel="noopener noreferrer" aria-label="Get Iron Dominion: Match 3 RPG on Google Play" data-i18n-aria="ironLink">
+                  <span data-i18n="getPlay">Get it on Google Play</span>
+                  <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="game game-lunisol">
+              <div class="game-art lunisol-art">
+                <span class="game-number" aria-hidden="true">05</span>
+                <span class="game-status status-soon" data-i18n="inDevelopment">Coming soon</span>
+                <img src="assets/lunisol.webp" width="384" height="384" loading="lazy" decoding="async" alt="">
+              </div>
+              <div class="game-content">
+                <p class="game-genre" data-i18n="lunisolGenre">Logic · Suns &amp; moons · Relaxation</p>
+                <h3>Lunisol<span class="game-subtitle" data-i18n="lunisolSubtitle">Binary Logic Puzzle</span></h3>
+                <p class="game-description" data-i18n="lunisolDescription">Bring suns and moons into balance on a 6×6 grid. Solve 150 puzzles with hints that explain each step, then discover endless new grids.</p>
                 <p class="coming-soon" data-i18n="comingSoon">Coming soon to Google Play</p>
               </div>
             </article>
 
-            <article class="game game-swipe">
-              <div class="game-art swipe-art">
-                <span class="game-number" aria-hidden="true">03</span>
-                <img src="assets/swipe-puzzle.webp" width="384" height="384" loading="lazy" decoding="async" alt="">
+            <article class="game game-puck">
+              <div class="game-art puck-art">
+                <span class="game-number" aria-hidden="true">06</span>
+                <span class="game-status status-soon" data-i18n="inDevelopment">Coming soon</span>
+                <img src="assets/puck-rogue.webp" width="384" height="384" loading="lazy" decoding="async" alt="">
               </div>
               <div class="game-content">
-                <p class="game-genre" data-i18n="swipeGenre">Puzzles · Patterns · Color</p>
-                <h3>Swipe Puzzle</h3>
-                <p class="game-description" data-i18n="swipeDescription">Recreate colorful patterns with a swipe. A small challenge for your eyes, fingers and a little bit of logic.</p>
-                <a class="game-link" href="https://play.google.com/store/apps/details?id=com.easycube.swipepuzzle" target="_blank" rel="noopener noreferrer" aria-label="Get Swipe Puzzle on Google Play" data-i18n-aria="swipeLink">
-                  <span data-i18n="getPlay">Get it on Google Play</span>
-                  <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg>
-                </a>
+                <p class="game-genre" data-i18n="puckGenre">Hockey · Tactics · Roguelike</p>
+                <h3>Puck Rogue<span class="game-subtitle" data-i18n="puckSubtitle">Ice Hockey Manager</span></h3>
+                <p class="game-description" data-i18n="puckDescription">Coach a hockey team through a roguelike cup run. Set your lines, choose tactics and strengthen players with cards while the matches play out on the ice.</p>
+                <p class="coming-soon" data-i18n="comingSoon">Coming soon to Google Play</p>
               </div>
             </article>
           </div>
